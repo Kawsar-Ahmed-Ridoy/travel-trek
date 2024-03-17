@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+:root{
+    --primary-color: #FF5400;
+    --secondary-color: #727275;
+}
+.container{
+    width: 80%;
+    margin: 20px auto;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo h2{
+    padding: 10px;
+}
+.nav-logo span{
+    color: var(--primary-color)
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    list-style: none;
+    display: flex;
+}
+.nav-list ul :first-child{
+    color: var(--primary-color) ;
+}
+.nav-list li{
+    margin-left: 30px;
+    color: var(--secondary-color);
+}
