@@ -1,42 +1,106 @@
-*{
-    margin: 0%;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-:root{
-    --primary-color: #FF5400;
-    --secondary-color: #727275;
+:root {
+  --primary-color: #ff5400;
+  --secondary-color: #727275;
+  --white-color: white;
 }
-.container{
-    width: 80%;
-    margin: 20px auto;
+.container {
+  width: 80%;
+  margin: 20px auto;
 }
-.nav-container{
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-logo h2 {
+  padding: 10px;
+}
+.nav-logo span {
+  color: var(--primary-color);
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-list ul {
+  list-style: none;
+  display: flex;
+}
+.nav-list ul :first-child {
+  color: var(--primary-color);
+}
+.nav-list li {
+  margin-left: 30px;
+  color: var(--secondary-color);
+}
+.explore-travel {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, .5) 0,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('Images/Group 13 (1) (1).png');
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.explore-travel-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.travel-header {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+.travel-header h1 {
+  color: var(--white-color);
+  font-size: 3rem;
+  
+}
+.travel-header p {
+  color: var(--white-color);
+  font-size: 16px;
+  margin: 20px 0;
+}
+.travel-input-list{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 12px;
+}
+.travel-input-list ul{
+    list-style: none;
     display: flex;
     justify-content: space-between;
 }
-.nav-logo{
+.travel-input-list ul li{
+    width: 130px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav-logo h2{
-    padding: 10px;
-}
-.nav-logo span{
-    color: var(--primary-color)
-}
-.nav-list{
-    display: flex;
-    align-items: center;
-}
-.nav-list ul{
-    list-style: none;
-    display: flex;
-}
-.nav-list ul :first-child{
-    color: var(--primary-color) ;
-}
-.nav-list li{
-    margin-left: 30px;
+    justify-content: space-between;
+    text-align: start;
+    padding: 12px;
+    background:var(--white-color);
+    border-radius: 12px;
+    font-size: 14px;
     color: var(--secondary-color);
+}
+.travel-input-list ul li:last-child{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    justify-content: center;  
+    gap: 4px;
 }
