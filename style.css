@@ -303,7 +303,6 @@
 }
 .perfect-place-text {
   width: 45%;
-  height: 42vh;
 }
 .perfect-place-text h1 {
   font-size: 30px;
@@ -483,7 +482,7 @@ footer {
   }
   .perfect-place-text {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
   }
   .perfect-place-image {
     width: 100%;
