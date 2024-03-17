@@ -55,6 +55,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 50px;
 }
 .explore-travel-section {
   display: flex;
@@ -105,11 +106,10 @@
     gap: 4px;
 }
 .popular-tours-container{
-    width: 100%;
     margin: 30px 0px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .popular-tours-text{
     width: 45%;
@@ -117,10 +117,6 @@
 .popular-tours-text h1{
     font-size: 30px;
 }
-/* .popular-tours-{
-    margin: 20px 0px;
-    
-} */
 .popular-tours-des{
     color: var(--secondary-color);
     margin: 20px 0px;
@@ -149,4 +145,128 @@
 }
 .popular-tours-image img{
     width: 100%;
+}
+.destination-text, .choose-us-text{
+  width: 65%;
+  margin: 40px auto;
+  text-align: center;
+}
+.destination-text h1, .choose-us-text h1{
+  font-size: 30px;
+}
+.destination-text p, .choose-us-text p{
+  margin: 20px 0px;
+  color: var(--secondary-color);
+}
+.maldives{
+  grid-area: maldives;
+}
+.indonesia{
+  grid-area: indonesia;
+} 
+.srilanka{
+  grid-area: srilanka;
+} 
+.north-america{
+  grid-area: north-america;
+} 
+.kashmir{
+  grid-area: kashmir;
+}
+.bangladesh{
+  grid-area: bangladesh;
+} 
+.bandarban{
+  grid-area: bandarban;
+}
+.destination-images{
+  display: grid;
+  margin: 30px 0px;
+  gap: 20px;
+  grid-template-areas: 
+  "maldives maldives indonesia indonesia"
+  "srilanka north-america north-america kashmir"
+  "bangladesh bandarban bandarban bandarban"
+  ;
+}
+.maldives, .indonesia, .srilanka, .north-america,.kashmir,.bangladesh, .bandarban{
+  position: relative;
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.maldives img, .indonesia img, .srilanka img, .north-america img, .kashmir img, .bangladesh img, .bandarban img{
+  width: 100%;
+  height: 40vh;
+  border-radius: 20px;
+}
+.maldives h3, .indonesia h3, .srilanka h3, .north-america h3, .kashmir h3, .bangladesh h3, .bandarban h3{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: var(--white-color);
+  top: 0;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choose-us-cards{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.choose-us-card-1{
+  width: 45%;
+  padding: 20px;
+  background: #FFFBF7;
+  border-radius: 14px;
+}
+.choose-us-card-1 h3{
+  font-size: 30px;
+  color: var(--primary-color);
+}
+.choose-us-card-1 h4{
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.choose-us-card-1 p{
+  color: var(--secondary-color);
+}
+.choose-us-card-2{
+  width: 45%;
+  padding: 20px;
+  background: #F4FDFF;
+  border-radius: 14px;
+}
+.choose-us-card-2 h3{
+  font-size: 30px;
+  color: var(--primary-color);
+}
+.choose-us-card-2 h4{
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.choose-us-card-2 p{
+  color: var(--secondary-color);
+}
+.choose-us-card-3{
+  width: 45%;
+  padding: 20px;
+  background: #FEF6F6;
+  border-radius: 14px;
+}
+.choose-us-card-3 h3{
+  font-size: 30px;
+  color: var(--primary-color);
+}
+.choose-us-card-3 h4{
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.choose-us-card-3 p{
+  color: var(--secondary-color);
 }
